@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+/** Layout **/
+
+body {
+    display: grid;
+    place-content: center;
+    font-family: var(--font-Open-family);
+}
+
+/** header **/
+
+header {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    gap: 5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img.top-logo {
+    max-width: 6.25rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.main-header {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    text-align: center;
+    gap: 2.5rem;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+/** article **/
+
+article {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    
+    margin: 5rem 0 0 0;
+
+
+    background-image: url(../images/bg-curve-mobile.svg);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.description-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+a.a-article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+
+    color: var(--moderate-cyan);
+    font-weight: 400;
+    font-size: clamp(1.1rem, 3vw, 1.3rem);
+
+    max-width: 15.62rem;
+    padding: .5rem 0;
+    border-bottom: 2px solid var(--moderate-cyan);
+}
+
+img.icon {
+    width: 1.75rem;
+}
+
+.article-box {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    gap: 1rem;
+
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.377);
+    padding: 2rem;
+}
+
+.quotes-icon img {
+    max-width: 1.56rem;
+}
+
+.kyle-burton { 
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.img-kyle img {
+    max-width: 3.12rem;
+    border-radius: 100%;
+}
+
+/** aside **/
+aside {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2.5rem;
+
+    background-color: var(--about-bg);
+}
+
+.aside-description {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/** footer **/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    background-color: var(--f-color);
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.logo img {
+    fill: white;
+    max-width: 12.5rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.phone {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.mail {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.contact-list {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.contact-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}

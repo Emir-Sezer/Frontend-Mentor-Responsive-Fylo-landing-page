@@ -1,0 +1,131 @@
+@media (min-width: 67.5em) {
+    .pad {
+        padding: 10rem 5rem;
+    }
+
+    .pad-s {
+        padding: 5rem 5rem;
+    }
+
+    /** header **/
+
+    .main-header {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "header img";
+        text-align: inherit;
+        gap: 2.5rem;
+    }
+
+    img.top-logo {
+        max-width: 12.5rem;
+    }
+
+    .description-header {
+        grid-area: header;
+        align-self: center;
+    }
+
+    form.form-header {
+        flex-direction: inherit;
+        gap: 1rem;
+    }
+
+    button {
+        padding: 0 2.5rem;
+    }
+
+    /** article **/
+    
+    article {
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "articledes img2 img2"
+        "kyle img2 img2" ;
+    }
+
+    .bg-img-article {
+        max-width: 34.37rem;
+        grid-area: img2;
+    }
+
+    .description-article {
+        text-align: start;
+        align-items: flex-start;
+        grid-area: articledes;
+        gap: 2rem;
+    }
+
+    .article-box {
+        grid-area: kyle;
+        max-width: 25rem;
+    }
+
+    /** aside **/
+
+    aside {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: space-around;
+        text-align: start;
+        
+    }
+
+    .aside-description {
+        max-width: 34.37rem;
+    }
+
+    .aside-form {
+        max-width: 34.37rem;
+    }
+
+    .aside-form button {
+        padding: 1rem;
+        width: 65%;
+    }
+
+    /** footer **/
+
+    footer {
+        flex-direction: inherit;
+        justify-content: space-between;
+    
+        background-color: var(--f-color);
+    }
+
+    .contact-list {
+        display: flex;
+        gap: 10rem;
+    }
+    
+    .social-icon {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 112.5em) {
+    .pad {
+        padding: 10rem 20rem;
+    }
+
+    .pad-s {
+        padding: 5rem 20rem;
+    }
+}
+
+@media (max-width:300px) {
+    html {
+        font-size: 14px;
+    }
+
+    .pad {
+        padding: 3rem 1rem;
+    }
+    
+    .pad-s {
+        padding: 1.5rem 1rem;
+    }
+}
